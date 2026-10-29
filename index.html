@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Estudaí — Controle de tarefas</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body><main>
+<header><a class="brand" href="./">e<span>·</span> Estudaí</a><span class="tag">UM PASSO DE CADA VEZ</span></header>
+<section class="intro"><p class="eyebrow">SEU ESPAÇO DE FOCO</p><h1>Organize hoje.<br><span>Aprenda mais amanhã.</span></h1><p>Reúna suas atividades, acompanhe seu progresso e dê espaço para o que importa.</p></section>
+<section class="stats" aria-label="Resumo das tarefas"><article><span>Total de tarefas</span><strong id="total">0</strong></article><article><span>Pendentes</span><strong id="pending">0</strong></article><article><span>Concluídas</span><strong id="done">0</strong></article></section>
+<div class="workspace"><section class="panel form-panel"><p class="eyebrow">TIRE DO PAPEL</p><h2>Nova tarefa</h2><form id="task-form"><label for="title">O que você precisa fazer?</label><input id="title" required maxlength="120" placeholder="Ex.: revisar exercícios de JavaScript"><label for="subject">Disciplina</label><input id="subject" required maxlength="60" placeholder="Ex.: Desenvolvimento Web"><button class="primary" type="submit">+ Adicionar tarefa</button></form><p class="note">Suas tarefas ficam salvas neste navegador.</p></section>
+<section class="panel list-panel"><div class="list-heading"><h2>Minhas tarefas</h2><span id="progress">0% concluído</span></div><div class="track"><div id="bar"></div></div><div class="filters" role="group" aria-label="Filtrar tarefas"><button data-filter="all" aria-pressed="true">Todas</button><button data-filter="pending" aria-pressed="false">Pendentes</button><button data-filter="done" aria-pressed="false">Concluídas</button></div><ul id="tasks"></ul><div id="empty"><div class="empty-icon" aria-hidden="true">✓</div><h3>Um novo começo por aqui</h3><p>Adicione sua primeira tarefa e comece no seu ritmo.</p></div></section></div>
+<p id="message" role="status" aria-live="polite"></p><footer>Estudaí · Projeto de prática em HTML, CSS e JavaScript</footer>
+</main></body></html>
