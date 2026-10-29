@@ -55,3 +55,7 @@ Os dados ficam apenas neste navegador e não são sincronizados com outros dispo
 ## Licença
 
 MIT. Veja [LICENSE](LICENSE).
+
+## Demonstração
+
+![Interface do Estudaí](preview%203.png)
